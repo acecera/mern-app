@@ -24,7 +24,7 @@ import './UsersList.css';
                     image={user.image} 
                     name={user.name} 
                     placeCount={user.places} 
-                    />
+                />
             ))}
         </ul>
      );

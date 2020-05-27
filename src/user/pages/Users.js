@@ -7,7 +7,7 @@ const Users = () => {
         {
             id: '11', 
             name: 'Ace', 
-            image: 'https://www.facebook.com/photo/?fbid=10202068541053357&set=a.1608690335449',
+            image: 'https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
             places: 3
         }
     ];
