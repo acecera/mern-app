@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Input';
+import './Input.css';
 
 const Input = props => {
     const element = props.element === 'input' ? (
