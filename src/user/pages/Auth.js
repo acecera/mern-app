@@ -88,7 +88,7 @@ const Auth = () => {
                 const responseData = await sendRequest(
                     'http://localhost:5000/api/users/signup', 
                     'POST',
-                    formData,
+                    formData
                 );
 
                 auth.login(responseData.user.id);
@@ -115,7 +115,9 @@ const Auth = () => {
                         onInput={inputHandler}
                     />
                 )}
-                {!isLoginMode && <ImageUpload center id="image" onInput={inputHandler} />}
+                {!isLoginMode && (
+                    <ImageUpload center id="image" onInput={inputHandler} />
+                )}
                     <Input 
                         element="input" 
                         id="email" 
