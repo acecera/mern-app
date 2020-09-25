@@ -76,7 +76,7 @@ const Auth = () => {
                     'Content-Type': 'application/json'
                 }
             );
-        auth.login(responseData.user.id);
+            auth.login(responseData.user.id);
         } catch (err) {}
         } else {
             try {
@@ -116,7 +116,12 @@ const Auth = () => {
                     />
                 )}
                 {!isLoginMode && (
-                    <ImageUpload center id="image" onInput={inputHandler} />
+                    <ImageUpload 
+                        center 
+                        id="image" 
+                        onInput={inputHandler} 
+                        errorText="Please provide an image"
+                    />
                 )}
                     <Input 
                         element="input" 
